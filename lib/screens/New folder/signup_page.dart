@@ -32,21 +32,57 @@ class _SignUpPageState extends State<SignUpPage> {
                   children: [
                     TextFormField(
                       decoration: InputDecoration(
-                        border: UnderlineInputBorder(
-                          borderRadius: BorderRadius.circular(
-                            10.0,
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10.0),
+                          borderSide: const BorderSide(
+                            color: Colors.white,
                           ),
                         ),
-                        hintText: 'FullName',
+                        border: InputBorder.none,
+                        // hintText: 'FullName',
+                        label: const Text(
+                          'FullName',
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
                       ),
                     ),
-                    TextFormField(
-                      decoration: const InputDecoration(
-                        hintText: 'Email address',
-                      ),
+                    const SizedBox(
+                      height: 20.0,
                     ),
                     TextFormField(
                       decoration: InputDecoration(
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10.0),
+                          borderSide: const BorderSide(
+                            color: Colors.white,
+                          ),
+                        ),
+                        border: InputBorder.none,
+                        // hintText: 'Email address',
+                        label: const Text(
+                          'Email address',
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 20.0,
+                    ),
+                    TextFormField(
+                      decoration: InputDecoration(
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(
+                            10.0,
+                          ),
+                          borderSide: const BorderSide(
+                            color: Colors.white,
+                          ),
+                        ),
+                        border: InputBorder.none,
                         // hintText: 'Password',
                         label: const Text(
                           'Password',
@@ -64,6 +100,7 @@ class _SignUpPageState extends State<SignUpPage> {
                             visibility
                                 ? Icons.visibility_off
                                 : Icons.visibility,
+                            color: Colors.white,
                           ),
                         ),
                       ),
